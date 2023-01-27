@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>The Title</title><!--Adds the Title-->
+
+    <!-- <style>
+        body {
+            background-image: url(./IMAGES/forest.jpg);
+            background-size: cover;
+        }
+    </style> -->
+    </head>
+        <body>
+            <h1>Our First Heading</h1> <!--Adds the first heading-->
+            <p>We can write something here</p> <!--Adding paragraphs-->
+    <!--LISTS-->        
+            <ol type="i"> <!--We have different types- 1, A, a,I,i-->
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ol>
+    <!--Unordered List--><!--For web navigation-->
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul> 
+<!--Nested List-->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2
+        <ul>
+            <li>Nested Item 1</li>
+            <li>Nested Item 2</li>
+            <li>Nested Item 3</li>
+        </ul>
+    </li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul> 
+<br>Line break<br
+            <center><p>To center your content</p></center>
+
+<hr><!--Visually breaks up the section of the document-->
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi, enim obcaecati ad modi cumque illo laborum iure ipsum expedita placeat, eius excepturi itaque molestias id eveniet quis tenetur recusandae.</p>
+        
+    <!--NEW CODE-->
+    <!-- HTML ATTRIBUTES -->
+    <p align="left">Lorem ipsum, dolor sit <br> amet consectetur adipisicing elit. Eius, culpa.</p>
+    <p align="center">Lorem &nbsp; &nbsp;ipsum dolor sit amet consectetur adipisicing elit. Consectetur cum <br>ratione maxime, ducimus nihil quod! Rem dolore eos <br> recusandae reprehenderit.</p>
+    <p align="right">Lorem ipsum dolor sit <br> amet consectetur adipisicing.</p>
+
+
+<!--External Links-->
+  <a href="http://google.com"></a> <!--Opens on the same page-->
+  <a href="http://google.com" target="_blank">Click for google</a> <!--Opens in a new tab-->
+<!--Internal Links-->
+<a href="/typography.html">typography</a>
+
+<!--IMAGES-->
+  <img src="/IMAGES/bmw.jpg" alt="bmw" width="200px"><!--images Local machine-->
+  <img src="https://unsplash.com/photos/ruWkmt3nU58" alt="Random image"><!--Remote images-->
+
+    
+<!---Forms (used to collect user input)-->
+    <form action="process.php" method="POST" enctype=""> <!--enctype enables us to upload large files-->
+        <!--Text-->
+        <div>
+            <h3>Personal Details</h3>
+            <label for="Name">FIRST NAME</label>
+            <input type="text" name="fname" id="fname" placeholder="first name"required>
+        </div>
+    <div>
+        <label for="">LAST NAME</label>
+        <input type="text" name="lname" id="lname" placeholder="last name"required>
+    
+    </div><br><br>
+
+     <!--Email-->
+    <div>
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" placeholder="email"required>
+    </div>
+
+     <!--Number-->
+    <div>
+        <label for="age">AGE</label>
+        <input type="Number" name="age" id="age" placeholder="age" min="18" max="200" step="5">
+    </div>
+<br>
+
+    <!--Date-->
+<div>
+    <label for="date">ADMISSION</label>
+    <input type="date" name="date" id="date" placeholder="date" min="2022-07-07">
+</div><br><br>
+
+ <!--Message/Text area-->
+<div>
+    <label for="message">Message</label>
+    <textarea name="Message" id="Message" cols="50" rows="10"></textarea>
+</div>
+<!--Insert Gender -->
+ <!--Select-->
+<div>
+    <h3>What is your Gender</h3>
+    <label for="sex">Sex</label>
+    <select name="sex" id="sex">
+       <option value="male">Male</option>
+       <option value="female">Female</option>
+       <option value="other">Other</option>
+    </select>
+</div>
+ <!--Number-->
+<div>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age">
+</div><br><br>
+
+ <!--Date-->
+<div>
+    <label for="birthdate">Birthdate</label>
+    <input type="date" name="birthdate" id="birthdate">
+</div><br><br>
+<div>
+    <label>Message</label>
+    <textarea name="message"></textarea>
+</div>
+
+<!--Radio forms-->
+<div>
+    <label for="membership">Membership</label>
+    <input type="radio" name="membership" value="simple" id="membership">Simple
+    <input type="radio" name="membership" value="standard" id="membership" checked>Standard
+    <input type="radio" name="membership" value="super" id="membership">Super
+</div>
+
+<!--Checkbox forms-->
+<div>
+    <label for="likes">I Like ..</label>
+    <input type="checkbox" name="likes" value="bike" id="likes">Bike
+    <input type="checkbox" name="likes" value="car" id="likes" checked>Car
+    <input type="checkbox" name="likes" value="boat" id="likes">Boat
+</div>
+
+    <!-- <form action="" method="" enctype="">
+        <div>
+            <label for="">FIRST NAME</label>
+            <input type="text" name="fname" id="fname" placeholder="first name"required>
+        </div>
+    <div>
+        <label for="">LAST NAME</label>
+        <input type="text" name="lname" id="lname" placeholder="last name"required>
+    
+    </div><br><br>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="email"required>
+    </div> -->
+        
+<p>Fun facts about you</p>
+        <label for="">I'm Kenyan</label>
+        <input type="Checkbox"><br>
+        <label for="">I stay in Nairobi</label>
+        <input type="Checkbox"><br>
+        <label for="">I live going out</label>
+        <input type="Checkbox"><br><br>
+
+   <p>Choose your favorite drink</p>
+        <label for="">Coffee</label>
+        <input type="Radio"><br><br>
+        <input type="Radio"><br><br>
+        <label for="">Capuccino</label>
+        <input type="Radio"><br><br>
+
+<!--Insert File-->
+        <div>
+            <label for="file">File</label>
+            <input name="file" id="file" type="file">
+        </div><br>
+
+        <div>
+            <label for="">PASSWORD</label>
+            <input type="password" name="pword" id="pword" placeholder="password"required>
+        </div>
+
+    <!--SELECT ATTRIBUTE-->
+    <!--id must correspond to label for-->
+    <label for="Courses">Courses</label>
+    <select name="Courses" id="Courses" multiple>
+        <option value="html">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JAVACRIPT">JAVACRIPT</option>
+    </select><br>
+
+    <!--BIO ATTRIBUTE-->
+    <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10">My name is Joe
+
+        </textarea>
+
+        <br>
+        <br>
+<!--Table Attribute-->
+<table style="width: 400px;">
+    <thead>
+       <tr><!--table row-->
+        <th>First Name</th> <!--table heading-->
+        <th>Last Name</th>
+        <th>Email</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr>
+<!--For the data-->
+           <td>Mike</td>
+           <td>Alusa</td>
+           <td>alusa.mike@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Yvie</td>
+            <td>Alusa</td>
+            <td>alusa.Yvie@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dama</td>
+            <td>Alusa</td>
+            <td>alusa.dama@gmail.com</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div>
+    <table border="10"cellpadding ="10"cellspacing ="10" bordercolor="black" bgcolor="orange">
+       <tr>
+          <th>Name</th> <!---->
+          <th>Salary</th>
+          <th>Title</th>
+       </tr>
+       <tr><!---->
+           <td>Mike</td>
+           <td>500000</td>
+           <td>Programmer</td>
+       </tr>
+    <br>
+    <tr>
+        <td>Yvie</td>
+        <td>50000</td>
+        <td>Programmer</td>
+    </tr>
+    <br>
+    <tr>
+        <td>Ken</td>
+        <td>50000</td>
+        <td>Developer</td>
+        <td rowspan = "2">Row 1 Cell 1</td>
+<td colspan = "3">Row 3 Cell 1</td>
+    </tr>
+    </table>
+    <br><br>
+</div>
+<div>
+    <input type="submit" name="submit" value="Submit">
+    <br><br>
+    <!-- <input type="submit" value="Submit"> -->
+<!--OR-->
+<!-- <button type="submit">Submit</button> -->
+</div>
+</form>
+
+
+<!--VIDEO ATTRIBUTE-->
+
+<div>
+    <center>
+    <video width="500"height="400"controls>
+        <source src="Drake - Sticky (Official Music Video).mp4" type="video/mp4">
+        Your browser does not support the video tag
+    </video>
+    </center>
+
+<div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fKfVCsgs0qU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div>
+    <audio controls autoplay>
+        <source src="Drake - Sticky (Official Music Video).mp3" type="audio/mp3">
+        <p>Your browser does not support the video tag</p>
+    </audio>
+
+</div
+</div>
+<!--Quotations-->
+<blockquote cite="http://traversymedia.com">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nesciunt reprehenderit esse expedita mollitia dolore totam dicta odit adipisci placeat, ad porro libero animi unde eum tempore corporis non voluptatum!</p>
+</blockquote>
+<!--cite tag-->
+<p><cite>HTML crash course</cite> by Brad Traversy</p>
+</body>
+</html>

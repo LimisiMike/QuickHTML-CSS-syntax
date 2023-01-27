@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Align</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6em;
+        background-image: url(./IMAGES/Calm.jpg);
+        background-size: cover;
+     }
+     .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /* background: #4c6ca0; */
+        border-radius: 5px;
+        overflow: auto;
+        margin: -20px;
+      }
+      .navbar li {
+        float: left;
+      }
+      .topnav-centered {
+        float: none;
+        position: absolute;
+        margin: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .navbar li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 20px;
+        margin: auto;
+      }
+      .navbar li a:hover {
+        background-color: #446190;
+        color: #f4f4f4;
+      }
+     .container {
+        max-width: 900px;/*Instead of doing only width, it's good practice to us max-width so that the text displays well on any device*/
+        margin: 30px auto;/*Aligns the test in the center with 30px margin top/bottom and auto left/right*/
+     }
+     .clr {/*This is to help clear the top boxes so that box 4 goes below*/
+        clear: both;
+     }
+     body p {
+        /* Text align */
+        text-align: center;
+        text-align: justify; /*Makes the edges more even*/
+     }
+     .box {
+        background: #f4f4f4;
+        border: 1px solid #333;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 20px;
+     }
+     /* Floating elements to the left/right etc */
+     #box-2 {
+        float: left;
+        width: 60%;
+     }
+     #box-3 {
+        float: right;
+        width: 35%;
+     }
+    </style>
+</head>
+<body>
+    <!-- Centered Navbar -->
+    <div class="topnav-centered">
+       <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam aspernatur tenetur fugit voluptatem enim tempora eligendi corporis, aperiam porro est quam dolore impedit nobis similique. Saepe, qui laboriosam velit maiores quia accusantium, corrupti, at ex odit assumenda tenetur alias ipsa consectetur eum! Blanditiis vel laboriosam voluptatibus ea dolores mollitia ipsa?</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam aspernatur tenetur fugit voluptatem enim tempora eligendi corporis, aperiam porro est quam dolore impedit nobis similique. Saepe, qui laboriosam velit maiores quia accusantium, corrupti, at ex odit assumenda tenetur alias ipsa consectetur eum! Blanditiis vel laboriosam voluptatibus ea dolores mollitia ipsa?</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam aspernatur tenetur fugit voluptatem enim tempora eligendi corporis, aperiam porro est quam dolore impedit nobis similique. Saepe, qui laboriosam velit maiores quia accusantium, corrupti, at ex odit assumenda tenetur alias ipsa consectetur eum! Blanditiis vel laboriosam voluptatibus ea dolores mollitia ipsa?</p>
+        </div>
+        <div class="clr"></div> <!--This is to help clear the top boxes so that box 4 goes below-->
+        <div id="box-4" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam aspernatur tenetur fugit voluptatem enim tempora eligendi corporis, aperiam porro est quam dolore impedit nobis similique. Saepe, qui laboriosam velit maiores quia accusantium, corrupti, at ex odit assumenda tenetur alias ipsa consectetur eum! Blanditiis vel laboriosam voluptatibus ea dolores mollitia ipsa?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* CSS Rest */
+        * {/*This selects everthing*/
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; /*This ensures that the width doesn't add up to the padding of the box */
+        }
+    padding example {
+        /* Padding assigned to each side */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        /* Padding shorthand = top, right, bottom, left ==Instead of having 4 lines with top to left side padding*/
+            padding: 10px 20px 10px 20px;
+        /* Alternatively, we can have top/bottom=10px and left/right= 20px -- see below */
+            padding: 10px 20px
+
+         /* The same applies to margin */
+         /* Padding assigned to each side */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        /* Padding shorthand = top, right, bottom, left ==Instead of having 4 lines with top to left side padding*/
+            margin: 10px 20px 10px 20px;
+        /* Alternatively, we can have top/bottom=10px and left/right= 20px -- see below */
+            margin: 10px 20px
+    }
+       /* Element Selectors */
+       body {
+        background-color: azure;
+        background-image: url(./IMAGES/tech.jpg);
+        background-size: cover;
+       }
+       /* . is for Classs */
+       .primary-heading {
+        color: blue;
+       }
+       /* # is for IDs */
+       /* #welcome {
+        background-color: aquamarine;
+       } */
+       /* Multiple Selectors */
+       #welcome, #about, #remote {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 40px;
+        color:black;
+        line-height: 1.6em;
+        border-radius: 10px;
+       }
+       /* Nested Selectors */
+       #welcome p {
+        font-size: 18px;
+        margin-left: 20px;
+       }
+       p {
+        color: white;
+       }
+       h2 {
+        color: bisque;
+       }
+       #welcome {
+        background-image: url(./IMAGES/forest.jpg);
+        height: 500px;
+        width: 600px;
+        background-position: 20px 20px; /*changes the position of the background image*/
+        background-size: cover; /*The background image fully covers the space rather than just a section*/
+        margin-left: 700px;
+       }
+       #about {
+        background-image: url(./IMAGES/Wildlife\ Elephants.jpg);
+        height: 800px;
+        width: 1200px;
+        background-size: cover;
+       }
+       #remote {
+        background-image: url(./IMAGES/Eagle.png);
+        height: 500px;
+        width: 600px;
+        background-size: cover;
+       }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore culpa alias, architecto eius facere, eligendi cumque ipsam adipisci placeat laborum consequatur esse libero aliquam rem! Autem, alias? Vel, dolor eum iure est blanditiis doloremque? Repellat illum non nulla eveniet fugiat. Quis, mollitia dolores? Debitis, perferendis iure. Dolores asperiores animi eos!</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, est. Obcaecati cum veritatis corporis non assumenda eveniet, illo numquam architecto fuga rerum at distinctio fugiat animi, magnam in? At aliquid ex non aut eius, hic laudantium, earum repudiandae nostrum eligendi placeat incidunt, atque quibusdam. Eum beatae ut rerum voluptates consequatur porro dolore repudiandae enim excepturi laboriosam nam quaerat blanditiis, odit veritatis et dignissimos nesciunt eaque minima? Ut iure in explicabo pariatur odio natus quaerat nulla, accusamus expedita excepturi veritatis. Sit ducimus nesciunt reprehenderit magni ipsam ipsa voluptatem expedita architecto voluptate unde? Eligendi quia voluptates ipsum corporis itaque obcaecati, cupiditate et nihil eveniet dicta nesciunt sed quae provident totam. Ipsa, aperiam dolores perspiciatis est illo ducimus, velit nobis exercitationem accusamus veritatis molestias pariatur alias animi at! Velit quos reprehenderit pariatur laboriosam quibusdam cumque, dolore corrupti ea delectus quia! Eveniet deserunt voluptates ratione voluptatem iusto vitae exercitationem consequatur placeat recusandae quisquam a pariatur animi nemo, voluptate, quos possimus sint, accusantium est ipsa temporibus voluptatum ab itaque magnam sequi. Accusantium dolorum rerum quas perspiciatis illum asperiores, quis odio id facere repellat praesentium ex dolores error est ea quaerat nobis aperiam necessitatibus doloremque eos sed. Consequuntur quisquam vitae inventore numquam itaque sed assumenda nihil!</p>
+    </div>
+    <div id="remote">
+        <h2>Let's talk about us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus alias corporis minus tempore a autem, ipsum inventore, sunt ipsa iusto eveniet quasi voluptas consequuntur, veniam nobis facere? Aspernatur consequuntur, magni dolores laborum soluta, repudiandae tempora nulla fuga nemo, tempore commodi dolor vero unde atque placeat saepe! Fugiat magnam harum, dignissimos doloribus atque magni amet quam voluptate. Sed atque omnis culpa, architecto qui commodi sunt cupiditate ipsa exercitationem rerum tempora. Sed autem optio aliquam. Eum, molestiae quo. Quibusdam, vitae beatae!</p>
+    </div>
+</body>
+</html>

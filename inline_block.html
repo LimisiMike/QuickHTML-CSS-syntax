@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+    <style>
+     li {
+        display: inline; /*Changes the list to inline*/
+     }
+     li a {
+        padding-right: 20px;/*Spreads the a elements*/
+     }
+     img {
+        display: block;/*Changes the inline element to block*/
+        margin: auto;
+     }
+     .box {
+        width: 32%;/*Width of the boxes*/
+        display: inline-block; /*allows us to go horizontal and also allow us to add width*/
+        box-sizing: border-box; /*Removes the default padding and margin*/
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+     }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+<br><br>
+<!-- To change an inline element to block -->
+<img src="./IMAGES/comp.jpg" alt="Computer" width="200px">
+
+<div class="box">
+    <h3>My Tech</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi incidunt animi accusantium, labore voluptas qui soluta modi ad nostrum quasi nihil velit ducimus. Blanditiis rem quaerat tenetur, eum consequuntur asperiores odit fugit eos dolore beatae molestiae nemo facilis! Autem, modi?</p>
+</div>
+<div class="box">
+    <h3>My Tech</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi incidunt animi accusantium, labore voluptas qui soluta modi ad nostrum quasi nihil velit ducimus. Blanditiis rem quaerat tenetur, eum consequuntur asperiores odit fugit eos dolore beatae molestiae nemo facilis! Autem, modi?</p>
+</div>
+<div class="box">
+    <h3>My Tech</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi incidunt animi accusantium, labore voluptas qui soluta modi ad nostrum quasi nihil velit ducimus. Blanditiis rem quaerat tenetur, eum consequuntur asperiores odit fugit eos dolore beatae molestiae nemo facilis! Autem, modi?</p>
+</div>
+</body>
+</html>

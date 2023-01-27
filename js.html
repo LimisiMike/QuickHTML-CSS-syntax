@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Trials</title>
+</head>
+<body>
+    <script>
+        const age = 9;
+        let isAdult, canWork, canEnlist, canDrink;
+
+        if (age >= 21) {
+        isAdult = true;
+        canWork = true;
+        canEnlist = true;
+        canDrink = true;
+        } else if (age >= 18) {
+        isAdult = true;
+        canWork = true;
+        canEnlist = true;
+        } else if (age >= 16) {
+         canWork = true;
+        }
+        
+        console.log(
+  `Age: ${age}, Can work: ${canWork}, Can enlist: ${canEnlist}, Is a legal adult: ${isAdult}, Can drink: ${canDrink}`
+);
+    </script>
+</body>
+</html>
